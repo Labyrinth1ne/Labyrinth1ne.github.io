@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>無 限 進 歩</title>
+    
+    <meta name="description" content="这里是 Labyrinthine 的个人主页">
+    <meta property="og:title" content="關於">
+    <meta property="og:description" content="这里是 Labyrinthine 的个人主页">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://Labyrinth1ne.github.io/about.html">
+    <meta property="og:image" content="/web/avatar.webp">
+    <link rel="icon" href="/web/avatar.webp">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src='/web/view_count.js'></script>
+
+    <style>
+        :root {
+            --bg-color-light: #f8f9fa;
+            --text-color-light: #212529;
+            --card-bg-light: #ffffff;
+            --border-color-light: #dee2e6;
+            --accent-color-light: #007bff;
+            --accent-hover-light: #0056b3;
+
+            --bg-color-dark: #121212;
+            --text-color-dark: #e0e0e0;
+            --card-bg-dark: #1e1e1e;
+            --border-color-dark: #333;
+            --accent-color-dark: #66b2ff;
+            --accent-hover-dark: #8cc6ff;
+        }
+
+        [data-color-mode="light"] {
+            --bg-color: var(--bg-color-light);
+            --text-color: var(--text-color-light);
+            --card-bg: var(--card-bg-light);
+            --border-color: var(--border-color-light);
+            --accent-color: var(--accent-color-light);
+            --accent-hover: var(--accent-hover-light);
+        }
+
+        [data-color-mode="dark"] {
+            --bg-color: var(--bg-color-dark);
+            --text-color: var(--text-color-dark);
+            --card-bg: var(--card-bg-dark);
+            --border-color: var(--border-color-dark);
+            --accent-color: var(--accent-color-dark);
+            --accent-hover: var(--accent-hover-dark);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+            box-sizing: border-box;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .postTitle {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0;
+        }
+        
+        .title-right a {
+            color: var(--text-color);
+            margin-left: 12px;
+            transition: color 0.2s ease-in-out;
+        }
+        .title-right a:hover {
+            color: var(--accent-color);
+        }
+
+        #postBody p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 1.2em;
+        }
+        
+        #postBody p:first-child {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .socials-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .socials-list li {
+            margin-bottom: 12px;
+        }
+
+        .socials-list a, .socials-list span {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .socials-list a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        #footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+        }
+
+        #footer a {
+            color: var(--accent-color);
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+        #footer a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+        
+        #footer #runday, #footer .powered-by {
+             display: block;
+             margin-top: 8px;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { padding: 25px; }
+            .postTitle { font-size: 26px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="header">
+            <h1 class="postTitle">关于</h1>
+            <div class="title-right">
+                <a href="https://Labyrinth1ne.github.io" id="buttonHome" title="首页">
+                    <svg class="octicon" width="20" height="20" viewBox="0 0 16 16" fill="currentColor"><path d="M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Z"></path></svg>
+                </a>
+                <a href="https://github.com/Labyrinth1ne" target="_blank" title="GitHub">
+                    <svg class="octicon" width="20" height="20" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+                </a>
+            </div>
+        </div>
+        
+        <div id="content">
+            <div class="markdown-body" id="postBody">
+                <p>这里是Labyrinthine的个人主页，How lucky to meet you!</p>
+                <p>很荣幸您能访问我的 Blog！希望能与你在比特之海的繁星之下相见！</p>
+                <p><strong>我的个人账号：</strong></p>
+                <ul class="socials-list">
+                    <li><span>QQ：2943309114</span></li>
+                    <li><span>Discord: labyr1nthine</span></li>
+                    <li><a href="https://github.com/Labyrinth1ne" rel="nofollow" target="_blank">GitHub</a></li>
+                    <li><a href="https://steamcommunity.com/id/Yuk1End/" rel="nofollow" target="_blank">Steam</a></li>
+                    <li><a href="https://x.com/tr4jectory" rel="nofollow" target="_blank">Twitter</a></li>
+                    <li><a href="https://space.bilibili.com/1121987600" rel="nofollow" target="_blank">Bilibili</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="footer">
+            <div id="footer1">
+                Copyright © <span id="copyrightYear"></span> <a href="https://Labyrinth1ne.github.io">Labyrinthine#3245</a>
+                <div>给时光以生命 给岁月以文明</div>
+            </div>
+            <div id="footer2">
+                <span id="runday"></span>
+                <span class="powered-by">Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank" rel="noopener noreferrer">Gmeek</a></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Set Theme based on user's system preference
+        try {
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            document.documentElement.setAttribute('data-color-mode', prefersDark ? 'dark' : 'light');
+        } catch (e) {
+            console.error("Error setting theme:", e);
+        }
+
+        // Set Copyright Year
+        try {
+            document.getElementById("copyrightYear").innerHTML = new Date().getFullYear();
+        } catch (e) {
+            console.error("Error setting copyright year:", e);
+        }
+
+        // Calculate and display site run duration
+        try {
+            // FIXED: Use the reliable YYYY-MM-DD format for the date.
+            const startDate = "2024-10-07"; 
+            if (startDate) {
+                const startSite = new Date(startDate);
+                const now = new Date();
+                // Check if the date is valid before calculating
+                if (!isNaN(startSite.getTime())) {
+                    const diff = now.getTime() - startSite.getTime();
+                    const diffDay = Math.floor(diff / (1000 * 60 * 60 * 24));
+                    if (diffDay >= 0) {
+                        document.getElementById("runday").innerHTML = "网站运行 " + diffDay + " 天";
+                    }
+                }
+            }
+        } catch (e) {
+            console.error("Error calculating site run days:", e);
+        }
+    </script>
+    
+    <script src='/web/articletoc.js'></script>
+    <script src='/web/lightbox.js'></script>
+
+</body>
+</html>

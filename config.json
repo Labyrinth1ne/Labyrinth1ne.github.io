@@ -1,11 +1,11 @@
 {
     "title":"Akkarinの自留地",
-    "subTitle":"Longing for the Future.",
+    "subTitle":"If you see this page, the nginx web server is successfully installed and working. Further configuration is required.",
     "avatarUrl":"https://avatars.githubusercontent.com/u/100501993?v=4",
     "allHead":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js' defer></script><link rel=\"preconnect\" href=\"https://code.buxiantang.top\"><link rel=\"preconnect\" href=\"https://blog.meekdai.com\"><link rel=\"stylesheet\" href=\"https://code.buxiantang.top/assets/GmeekBaseTheme.css\"><script src=\"https://code.buxiantang.top/assets/GmeekCustomizeCss.js\" defer></script>",
     "startSite":"10/07/2024",
     "singlePage":["about"],
-    "bottomText":"人有悲欢离合，月有阴晴圆缺。",
+    "bottomText":"Longing for the Future.",
     "script":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>",
     "GMEEK_VERSION":"last"
 }
